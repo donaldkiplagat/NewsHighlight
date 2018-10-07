@@ -9,12 +9,11 @@ def index():
     """
     View root page function that returns the index page and its data
     """
-
     #Getting source
     sources = get_sources('sources')
 
     return render_template('index.html', sources = sources)
-    
+
 @main.route('/articles/<id>')
 def articles(id):
     """
