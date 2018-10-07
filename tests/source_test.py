@@ -18,3 +18,8 @@ class ArticleTest(unittest.TestCase):
     """
     Test Class to test the behaviour of the Article class
     """
+    def setup(self):
+        """
+        Set up method that will run before every Test
+        """
+        self.new_article = Article()
