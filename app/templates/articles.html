@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+
+{%block content%}
+<h1 class="text-center">News Headlines</h1>
+  {{macro.displayArticlesList(articles)}}
+{%endblock%}
