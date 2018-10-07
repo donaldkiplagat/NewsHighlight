@@ -1,5 +1,5 @@
 import unittest
-from app.models import Source
+from app.models import Source,Article
 
 class SourceTest(unittest.TestCase):
     """
@@ -13,3 +13,5 @@ class SourceTest(unittest.TestCase):
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_sourcce,Source))
+
+class ArticleTest(unittest.TestCase):
