@@ -15,3 +15,6 @@ class SourceTest(unittest.TestCase):
         self.assertTrue(isinstance(self.new_sourcce,Source))
 
 class ArticleTest(unittest.TestCase):
+    """
+    Test Class to test the behaviour of the Article class
+    """
