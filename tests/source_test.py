@@ -9,7 +9,7 @@ class SourceTest(unittest.TestCase):
         """
         Set up method that will run before every Test
         """
-        self.new_source = Source(5432,"Donald Kiplagat","Test to see if Source is retrieved","TestUrl","TestUrlToImage","TestTime","The article itself")
+        self.new_source = Source("bloomberg","Donald Kiplagat","Test to see if Source is retrieved","TestUrl","The article itself")
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_sourcce,Source))
@@ -22,4 +22,7 @@ class ArticleTest(unittest.TestCase):
         """
         Set up method that will run before every Test
         """
-        self.new_article = Article()
+        self.new_article = Article("bloomberg","TestTitle","TestDescription","TestUrl","TestUrlToImage","TestPublishedAt","TestContent")
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.new_article,Article))
