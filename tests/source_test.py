@@ -25,7 +25,6 @@ class SourceTest(unittest.TestCase):
         self.assertEqual(self.new_source.url,"TestUrl")
         self.assertEqual(self.new_source.category,"The article itself")
 
-
 class ArticleTest(unittest.TestCase):
     """
     Test Class to test the behaviour of the Article class
