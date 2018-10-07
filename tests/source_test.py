@@ -14,6 +14,18 @@ class SourceTest(unittest.TestCase):
     def test_instance(self):
         self.assertTrue(isinstance(self.new_sourcce,Source))
 
+
+    def test_init(self):
+        """
+        test_init case to test if the object is initialized properly
+        """
+        self.assertEqual(self.new_source.id,"bloomberg")
+        self.assertEqual(self.new_source.name,"Donald Kiplagat")
+        self.assertEqual(self.new_source.description,"Test to see if Source is retrieved")
+        self.assertEqual(self.new_source.url,"TestUrl")
+        self.assertEqual(self.new_source.category,"The article itself")
+
+
 class ArticleTest(unittest.TestCase):
     """
     Test Class to test the behaviour of the Article class
@@ -26,3 +38,15 @@ class ArticleTest(unittest.TestCase):
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_article,Article))
+
+    def test_init(self):
+        """
+        test_init case to test if the object is initialized properly
+        """
+        self.assertEqual(self.new_article.id,"bloomberg")
+        self.assertEqual(self.new_article.title,"TestTitle")
+        self.assertEqual(self.new_article.description,"TestDescription")
+        self.assertEqual(self.new_article.url,"TestUrl")
+        self.assertEqual(self.new_article.urlToImage,"TestUrlToImage")
+        self.assertEqual(self.new_article.publishedAt,"TestPublishedAt")
+        self.assertEqual(self.new_article.content,"TestContent")
